@@ -1169,34 +1169,31 @@ html {
 }
 </style>
 <style>
-@media (max-width: 768px){
 
-    /* BOTONES LIMPIOS */
-    .evenz-menubtns .evenz-btn{
-        width: 50px !important;
-        height: 50px !important;
-        border-radius: 50% !important;
-        display: flex !important;
-        align-items: center;
-        justify-content: center;
-        background: #0a2a4a !important;
-        color: white !important;
-        margin-right: 8px;
-        padding: 0 !important;
-        overflow: hidden; /* 🔥 corta texto raro */
-    }
-
-    /* OCULTAR TEXTO "menu search" */
-    .evenz-menubtns .evenz-btn{
-        font-size: 0 !important;
-    }
-
-    /* ICONOS BIEN */
-    .evenz-menubtns .material-icons{
-        font-size: 22px !important;
-    }
-
+/* BOTÓN MÓVIL */
+.btn-mobile{
+    position: fixed;
+    top: 70px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    background: #002855;
+    color: white;
+    font-size: 26px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
 }
+
+/* SOLO EN CELULAR */
+@media (min-width: 768px){
+    .btn-mobile{
+        display: none;
+    }
+}
+
 </style>
 </head>
 	<body id="evenz-body" class="wp-singular page-template page-template-page-fullwidth page-template-page-fullwidth-php page page-id-1936 wp-theme-evenz wp-child-theme-evenz-child evenz-body evenz-menu-opaque evenz-menu-stick wpb-js-composer js-comp-ver-8.7 vc_responsive evenz-clip-enabled evenz-scrolled" data-evenz-scrolled="533.5999755859375" data-scrollspy-half="389"><div id="hs-web-interactives-top-push-anchor" class="go3670563033"></div>
@@ -1272,7 +1269,7 @@ html {
 	
 	
 	</div>
-
+<div class="btn-mobile" onclick="toggleMenu()">☰</div>
 <div id="evenz-menu" class="evenz-menu evenz-paper" style="min-height: 0; background-color: #002855;">
 	<div class="evenz-menu__cont">
 
