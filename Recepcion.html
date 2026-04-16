@@ -1563,13 +1563,93 @@ html {
                                             margin:0 auto;
                                             max-width:100%;
                                             height:auto;">
-<p style="margin-top:20px; font-size:24px; font-weight:600;">
-    Link de inscripción:
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeWV1oTMMfFXW5jZpMOLAOax7_KviCndWO75gfXg2PN3AVKSQ/viewform?usp=header"
-       target="_blank"
-       style="color:#0073aa; text-decoration:none;">
-        Haz clic aquí para registrarte
-    </a>
+<style>
+.resumenes-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    max-width: 1000px;
+    padding: 0 20px;
+}
+
+.resumen-card {
+    flex: 1;
+    min-width: 320px;
+    max-width: 450px;
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 35px 30px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    border-top: 5px solid #0d47a1;
+    transition: all 0.3s ease;
+}
+
+.resumen-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.resumen-card h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0d47a1;
+    margin-bottom: 15px;
+}
+
+.resumen-card p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.resumen-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #0d47a1, #1565c0);
+    color: #ffffff !important;
+    padding: 14px 28px;
+    border-radius: 10px;
+    text-decoration: none !important;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.resumen-btn:hover {
+    background: linear-gradient(135deg, #1565c0, #1976d2);
+    transform: scale(1.05);
+}
+</style>
+
+<div class="resumenes-container">
+
+    <div class="resumen-card">
+        <h3>Plantilla de Resúmenes</h3>
+        <p>
+            Descargue el formato oficial establecido por la organización para la correcta estructuración y presentación de su resumen académico.
+        </p>
+        <a href="LINK_PLANTILLA_AQUI" target="_blank" class="resumen-btn">
+            Descargar plantilla
+        </a>
+    </div>
+
+    <div class="resumen-card">
+        <h3>Recepción de Resúmenes</h3>
+        <p>
+            Acceda al formulario oficial para el envío de su resumen y complete el proceso de postulación de acuerdo con los lineamientos del evento.
+        </p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeWV1oTMMfFXW5jZpMOLAOax7_KviCndWO75gfXg2PN3AVKSQ/viewform?usp=header"
+           target="_blank"
+           class="resumen-btn">
+            Enviar resumen
+        </a>
+    </div>
+
+</div>
 </p>
                             </article>
 
