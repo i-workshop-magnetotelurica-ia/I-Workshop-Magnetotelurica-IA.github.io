@@ -1342,12 +1342,14 @@ html {
 <div class="evenz-menubtns mobile-menu" style="justify-content: start;">
     <div class="evenz-menubtns__c">
 
+        <!-- BOTÓN MENÚ -->
         <a class="evenz-btn evenz-btn__r evenz-hide-on-large-only"
            data-evenz-switch="evenz-overlayopen"
            data-evenz-target="#evenz-body">
             <i class="material-icons">menu</i>
         </a>
 
+        <!-- BOTÓN BUSCADOR -->
         <a class="evenz-btn evenz-btn__r"
            data-evenz-switch="open"
            data-evenz-target="#evenz-searchbar">
@@ -1369,6 +1371,7 @@ html {
             </button>
         </form>
 
+        <!-- BOTÓN CERRAR -->
         <a class="evenz-btn evenz-btn__r"
            data-evenz-switch="open"
            data-evenz-target="#evenz-searchbar">
@@ -1377,6 +1380,11 @@ html {
 
     </div>
 </nav>
+
+<!-- 👇 ESTE DIV ES CLAVE, NO LO BORRES -->
+<div class="evenz-overlay__pagemask" 
+     data-evenz-switch="evenz-overlayopen" 
+     data-evenz-target="#evenz-body"></div>
 	
 </div>
 
