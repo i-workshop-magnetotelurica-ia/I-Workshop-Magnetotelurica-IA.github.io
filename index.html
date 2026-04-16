@@ -1169,8 +1169,15 @@ html {
 }
 </style>
 <style>
-body, html {
-    overflow: auto !important;
+html, body {
+    overflow-y: scroll !important;
+    height: auto !important;
+}
+
+/* por si el tema bloquea contenedores */
+#evenz-master,
+#evenz-pagecontent {
+    overflow: visible !important;
     height: auto !important;
 }
 </style>
