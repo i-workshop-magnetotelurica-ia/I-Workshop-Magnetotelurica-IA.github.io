@@ -1196,7 +1196,30 @@ html {
 </style>
 <style>
 @media (max-width: 768px){
+/* HACER EL MENÚ VERTICAL */
+#evenz-menubar{
+    display: block !important;
+}
 
+/* ITEMS UNO DEBAJO DEL OTRO */
+#evenz-menubar li{
+    display: block !important;
+    width: 100% !important;
+}
+
+/* LINKS VISIBLES */
+#evenz-menubar a{
+    display: block !important;
+    padding: 15px !important;
+    color: white !important;
+}
+
+/* SUBMENÚS VISIBLES */
+.sub-menu{
+    display: block !important;
+    position: relative !important;
+    background: #003366 !important;
+}
     /* MENÚ OCULTO */
     #evenz-menu{
         position: fixed !important;
