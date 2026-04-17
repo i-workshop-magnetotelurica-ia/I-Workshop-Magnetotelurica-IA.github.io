@@ -1233,29 +1233,41 @@ html {
 
 .beneficios-container {
   display: flex;
-  justify-content: center;   /* 👈 centra TODO */
-  align-items: center;
+  justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
   margin-top: 40px;
 }
 
-/* cada tarjeta */
+/* TARJETAS */
 .beneficio {
   display: flex;
   align-items: center;
   gap: 10px;
-  background: white;
+  background: #ffffff !important; /* 👈 fuerza el fondo */
   padding: 15px 20px;
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15) !important; /* 👈 fuerza sombra */
   font-weight: 500;
-  max-width: 250px;
+  max-width: 260px;
+  transition: all 0.3s ease;
 }
 
 /* texto */
 .beneficio p {
   margin: 0;
+  color: #333 !important;
+}
+
+/* icono */
+.beneficio span {
+  font-size: 22px;
+}
+
+/* hover (para que se vea pro otra vez) */
+.beneficio:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
 }
 
 /* 📱 móvil */
