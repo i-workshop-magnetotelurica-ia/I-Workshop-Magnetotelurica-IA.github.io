@@ -1229,7 +1229,57 @@ html {
 }
 
 </style>  
- </head>
+<style>
+
+/* contenedor general */
+.beneficios-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+/* cada bloque */
+.beneficio {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  font-weight: 500;
+  max-width: 250px;
+  transition: all 0.3s ease;
+}
+
+/* icono */
+.beneficio span {
+  font-size: 22px;
+}
+
+/* hover bonito */
+.beneficio:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+/* 📱 móvil */
+@media (max-width: 768px) {
+  .beneficios-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .beneficio {
+    width: 90%;
+    max-width: 400px;
+  }
+}
+
+</style> 
+</head>
 	<body id="evenz-body" class="wp-singular page-template page-template-page-fullwidth page-template-page-fullwidth-php page page-id-1936 wp-theme-evenz wp-child-theme-evenz-child evenz-body evenz-menu-opaque evenz-menu-stick wpb-js-composer js-comp-ver-8.7 vc_responsive evenz-clip-enabled evenz-scrolled" data-evenz-scrolled="533.5999755859375" data-scrollspy-half="389"><div id="hs-web-interactives-top-push-anchor" class="go3670563033"></div>
 				<div id="evenz-global" class="evenz-global evenz-global__sticky evenz-global__sticky__sec-h">
 			
@@ -1487,24 +1537,47 @@ html {
          style="max-width:80%; height:auto;">
     </div>
 
+<div style="display:flex; justify-content:center; margin-top:25px;">
+
+  <div style="
+    font-size:clamp(22px, 6vw, 40px);
+    font-weight:800;
+    color:white;
+    background:linear-gradient(135deg,#00629b,#00b4d8,#00d4ff);
+    padding:15px 35px;
+    border-radius:15px;
+    box-shadow:0 6px 20px rgba(0,0,0,0.3);
+    letter-spacing:2px;
+    text-transform:uppercase;
+    animation:brillo 2s infinite alternate;
+  ">
+    🚀 Próximamente 🚀
+  </div>
+
+
 </div>
 
-				<div data-evenz-customstyles=".evenz-evenztabsebcf-icip- .evenz-txtfx--oslo, .evenz-evenztabsebcf-icip- .evenz-evenztabsebcf-icip- .evenz-txtfx--oslo::before { color: #ffffff}
-							.evenz-evenztabsebcf-icip- .evenz-txtfx--oslo.evenz-active span  { color: rgba(0,0,0,0.8)}
-							.evenz-evenztabsebcf-icip- .evenz-txtfx--oslo::before { border-color: #00629b}"></div>
-					<hr class="evenz-spacer-s">
-		</div></div></div></div></div></div></div><div class="evenz-vc-row-container"><div class="vc_row evenz-stickycont wpb_row evenz-vc_row"><div class="evenz-container evenz-rowcontainer-vc"><div class="evenz-rowcontent"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper "><div class="vc_row wpb_row vc_inner evenz-vc_row"><div class=" evenz-rowcontainer-vc"><div class="evenz-rowcontent"><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper">		<div class="evenz-herolist ">
-									<p><span class="evenz-btn evenz-btn__r"><i class="material-icons">check</i></span> Presente su trabajo de investigación</p>
-								</div>
-		</div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper">		<div class="evenz-herolist ">
-									<p><span class="evenz-btn evenz-btn__r"><i class="material-icons">check</i></span> Aprenda de expertos del área de la geofísica</p>
-								</div>
-		</div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper">		<div class="evenz-herolist ">
-									<p><span class="evenz-btn evenz-btn__r"><i class="material-icons">check</i></span> Networking con colegas</p>
-								</div>
-		</div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper">		<div class="evenz-herolist ">
-									<p><span class="evenz-btn evenz-btn__r"><i class="material-icons">check</i></span> Viva la experiencia cientifica</p>
-								</div>
+				<div class="beneficios-container">
+
+  <div class="beneficio">
+    <span>📊</span>
+    <p>Presente su trabajo de investigación</p>
+  </div>
+
+  <div class="beneficio">
+    <span>🎓</span>
+    <p>Aprenda de expertos del área de la geofísica</p>
+  </div>
+
+  <div class="beneficio">
+    <span>🤝</span>
+    <p>Networking con colegas</p>
+  </div>
+
+  <div class="beneficio">
+    <span>🔬</span>
+    <p>Viva la experiencia científica</p>
+  </div>
 		</div></div></div></div></div></div>			<hr class="evenz-spacer-m">
 		</div></div></div></div></div></div></div><div class="evenz-vc-row-container"><div class="vc_row evenz-stickycont wpb_row evenz-vc_row page-overlap-row wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp"><div class=" evenz-rowcontainer-vc"><div class="evenz-rowcontent"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper ">		<div>
 			<div class="aligncenter"> <h2 class="evenz-element-caption evenz-caption  evenz-caption__xl evenz-caption__c " data-qtwaypoints-offset="30" data-qtwaypoints="">				<span>Comité Organizador</span>
