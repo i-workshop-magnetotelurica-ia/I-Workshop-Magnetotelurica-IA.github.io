@@ -1229,6 +1229,49 @@ html {
 }
 
 </style>  
+<style>
+
+.beneficios-container {
+  display: flex;
+  justify-content: center;   /* 👈 centra TODO */
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+/* cada tarjeta */
+.beneficio {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  font-weight: 500;
+  max-width: 250px;
+}
+
+/* texto */
+.beneficio p {
+  margin: 0;
+}
+
+/* 📱 móvil */
+@media (max-width: 768px) {
+  .beneficios-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .beneficio {
+    width: 90%;
+    max-width: 400px;
+  }
+}
+
+</style>
  </head>
 	<body id="evenz-body" class="wp-singular page-template page-template-page-fullwidth page-template-page-fullwidth-php page page-id-1936 wp-theme-evenz wp-child-theme-evenz-child evenz-body evenz-menu-opaque evenz-menu-stick wpb-js-composer js-comp-ver-8.7 vc_responsive evenz-clip-enabled evenz-scrolled" data-evenz-scrolled="533.5999755859375" data-scrollspy-half="389"><div id="hs-web-interactives-top-push-anchor" class="go3670563033"></div>
 				<div id="evenz-global" class="evenz-global evenz-global__sticky evenz-global__sticky__sec-h">
