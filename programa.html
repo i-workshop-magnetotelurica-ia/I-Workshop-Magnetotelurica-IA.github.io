@@ -2667,8 +2667,8 @@ html {
 .fieldtrip-section{
     position: relative;
     overflow: hidden;
-    margin-top: 60px;
-    padding: 70px 50px;
+    margin-top: 50px;
+    padding: 45px 35px;
     border-radius: 35px;
     background: linear-gradient(135deg,#062c5c,#06b6d4);
     color: #fff;
@@ -2678,15 +2678,16 @@ html {
     position: relative;
     z-index: 2;
     display: grid;
-    grid-template-columns: 420px 1fr;
-    gap: 60px;
+    grid-template-columns: 350px 1fr;
+    gap: 45px;
     align-items: center;
 }
 
 .fieldtrip-image img{
     width: 100%;
-    border-radius: 28px;
+    max-height: 520px;
     object-fit: cover;
+    border-radius: 28px;
     box-shadow: 0 20px 45px rgba(0,0,0,0.30);
     border: 2px solid rgba(255,255,255,0.15);
 }
@@ -2697,12 +2698,12 @@ html {
 
 .fieldtrip-pill{
     display: inline-block;
-    margin-bottom: 22px;
+    margin-bottom: 18px;
     padding: 10px 22px;
     border-radius: 999px;
     background: rgba(255,255,255,0.12);
     border: 1px solid rgba(255,255,255,0.15);
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -2711,59 +2712,60 @@ html {
 
 .fieldtrip-section h2{
     margin: 0;
-    font-size: 64px;
-    line-height: 1.08;
+    font-size: 38px;
+    line-height: 1.1;
     font-weight: 800;
 }
 
 .fieldtrip-section h2 span{
     color: #ffd166;
+    display: block;
 }
 
 .fieldtrip-section h3{
-    margin-top: 20px;
-    font-size: 34px;
+    margin-top: 12px;
+    font-size: 22px;
     color: #ffe082;
     font-weight: 700;
 }
 
 .fieldtrip-section p{
-    max-width: 900px;
-    margin: 35px 0 50px;
-    font-size: 22px;
-    line-height: 1.7;
+    max-width: 700px;
+    margin: 22px 0 30px;
+    font-size: 16px;
+    line-height: 1.8;
     color: rgba(255,255,255,0.92);
 }
 
 .fieldtrip-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
-    gap: 22px;
+    grid-template-columns: repeat(2,1fr);
+    gap: 16px;
 }
 
 .fieldtrip-item{
     background: rgba(255,255,255,0.10);
     border: 1px solid rgba(255,255,255,0.16);
-    border-radius: 24px;
-    padding: 32px 20px;
+    border-radius: 20px;
+    padding: 22px 15px;
     transition: 0.3s ease;
     backdrop-filter: blur(10px);
     text-align: center;
 }
 
 .fieldtrip-item:hover{
-    transform: translateY(-8px);
+    transform: translateY(-5px);
     background: rgba(255,255,255,0.16);
 }
 
 .fieldtrip-item span{
     display: block;
-    font-size: 40px;
-    margin-bottom: 14px;
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 
 .fieldtrip-item strong{
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 700;
 }
 
@@ -2774,17 +2776,17 @@ html {
 }
 
 .fieldtrip-circle.top{
-    width: 320px;
-    height: 320px;
-    top: -120px;
-    right: -90px;
+    width: 220px;
+    height: 220px;
+    top: -80px;
+    right: -60px;
 }
 
 .fieldtrip-circle.bottom{
-    width: 250px;
-    height: 250px;
-    bottom: -140px;
-    left: -100px;
+    width: 180px;
+    height: 180px;
+    bottom: -90px;
+    left: -70px;
 }
 
 @media(max-width:1100px){
@@ -2794,7 +2796,7 @@ html {
     }
 
     .fieldtrip-image{
-        max-width: 500px;
+        max-width: 420px;
         margin: 0 auto;
     }
 
@@ -2806,32 +2808,36 @@ html {
         margin-left: auto;
         margin-right: auto;
     }
+
+    .fieldtrip-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
 }
 
 @media(max-width:768px){
 
     .fieldtrip-section{
-        padding: 55px 25px;
+        padding: 40px 22px;
     }
 
     .fieldtrip-section h2{
-        font-size: 42px;
+        font-size: 34px;
     }
 
     .fieldtrip-section h3{
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .fieldtrip-section p{
-        font-size: 18px;
+        font-size: 16px;
     }
 
-    .fieldtrip-item strong{
-        font-size: 19px;
+    .fieldtrip-grid{
+        grid-template-columns: 1fr;
     }
 
     .fieldtrip-wrapper{
-        gap: 40px;
+        gap: 35px;
     }
 }
 
