@@ -2596,78 +2596,109 @@ html {
 <div class="program-mini-item"><span>📚</span><strong>Sesiones académicas</strong></div>
 </div>
 </div>
+</div>
+</section>
+
 <section class="fieldtrip-section" id="salida-campo">
 
-  <div class="fieldtrip-circle top"></div>
-  <div class="fieldtrip-circle bottom"></div>
+    <div class="fieldtrip-circle top"></div>
+    <div class="fieldtrip-circle bottom"></div>
 
-  <div class="fieldtrip-content">
+    <div class="fieldtrip-wrapper">
 
-    <span class="fieldtrip-pill">SALIDA DE CAMPO</span>
+        <!-- IMAGEN -->
+        <div class="fieldtrip-image">
 
-    <h2>
-      Adquisición real de <br>
-      <span>Magnetotelúrica</span>
-    </h2>
+            <img src="img/salida-magnetotelurica.jpg" alt="Salida de campo magnetotelúrica">
 
-    <h3>📅 22 - 23 de mayo</h3>
+        </div>
 
-    <p>
-      Vive una experiencia práctica de adquisición magnetotelúrica utilizando
-      equipo Phoenix en Piedecuesta, Santander. La actividad incluirá operación
-      en campo, despliegue de sensores, adquisición real de datos geofísicos
-      y explicación técnica del método magnetotelúrico.
-    </p>
+        <!-- TEXTO -->
+        <div class="fieldtrip-content">
 
-    <div class="fieldtrip-grid">
+            <span class="fieldtrip-pill">SALIDA DE CAMPO</span>
 
-      <div class="fieldtrip-item">
-        <span>📡</span>
-        <strong>Equipo Phoenix</strong>
-      </div>
+            <h2>
+                Adquisición real de <br>
+                <span>Magnetotelúrica</span>
+            </h2>
 
-      <div class="fieldtrip-item">
-        <span>🧲</span>
-        <strong>Magnetotelúrica</strong>
-      </div>
+            <h3>📅 22 - 23 de mayo</h3>
 
-      <div class="fieldtrip-item">
-        <span>📍</span>
-        <strong>Piedecuesta</strong>
-      </div>
+            <p>
+                Vive una experiencia práctica de adquisición magnetotelúrica utilizando
+                equipo Phoenix en Piedecuesta, Santander. La actividad incluirá operación
+                en campo, despliegue de sensores, adquisición real de datos geofísicos
+                y explicación técnica del método magnetotelúrico.
+            </p>
 
-      <div class="fieldtrip-item">
-        <span>⛺</span>
-        <strong>Trabajo de campo</strong>
-      </div>
+            <div class="fieldtrip-grid">
+
+                <div class="fieldtrip-item">
+                    <span>📡</span>
+                    <strong>Equipo Phoenix</strong>
+                </div>
+
+                <div class="fieldtrip-item">
+                    <span>🧲</span>
+                    <strong>Magnetotelúrica</strong>
+                </div>
+
+                <div class="fieldtrip-item">
+                    <span>📍</span>
+                    <strong>Piedecuesta</strong>
+                </div>
+
+                <div class="fieldtrip-item">
+                    <span>⛺</span>
+                    <strong>Trabajo de campo</strong>
+                </div>
+
+            </div>
+
+        </div>
 
     </div>
-
-  </div>
 
 </section>
 
 <style>
+
 .fieldtrip-section{
     position: relative;
     overflow: hidden;
-    margin-top: 50px;
-    padding: 80px 40px;
+    margin-top: 60px;
+    padding: 70px 50px;
     border-radius: 35px;
     background: linear-gradient(135deg,#062c5c,#06b6d4);
     color: #fff;
-    text-align: center;
+}
+
+.fieldtrip-wrapper{
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 420px 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.fieldtrip-image img{
+    width: 100%;
+    border-radius: 28px;
+    object-fit: cover;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.30);
+    border: 2px solid rgba(255,255,255,0.15);
 }
 
 .fieldtrip-content{
     position: relative;
-    z-index: 2;
 }
 
 .fieldtrip-pill{
     display: inline-block;
-    margin-bottom: 18px;
-    padding: 10px 20px;
+    margin-bottom: 22px;
+    padding: 10px 22px;
     border-radius: 999px;
     background: rgba(255,255,255,0.12);
     border: 1px solid rgba(255,255,255,0.15);
@@ -2675,13 +2706,13 @@ html {
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: rgba(255,255,255,0.8);
+    color: rgba(255,255,255,0.85);
 }
 
 .fieldtrip-section h2{
     margin: 0;
-    font-size: 58px;
-    line-height: 1.1;
+    font-size: 64px;
+    line-height: 1.08;
     font-weight: 800;
 }
 
@@ -2690,16 +2721,16 @@ html {
 }
 
 .fieldtrip-section h3{
-    margin-top: 18px;
+    margin-top: 20px;
     font-size: 34px;
     color: #ffe082;
     font-weight: 700;
 }
 
 .fieldtrip-section p{
-    max-width: 950px;
-    margin: 35px auto 55px;
-    font-size: 23px;
+    max-width: 900px;
+    margin: 35px 0 50px;
+    font-size: 22px;
     line-height: 1.7;
     color: rgba(255,255,255,0.92);
 }
@@ -2707,16 +2738,17 @@ html {
 .fieldtrip-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
-    gap: 24px;
+    gap: 22px;
 }
 
 .fieldtrip-item{
     background: rgba(255,255,255,0.10);
     border: 1px solid rgba(255,255,255,0.16);
     border-radius: 24px;
-    padding: 35px 20px;
+    padding: 32px 20px;
     transition: 0.3s ease;
     backdrop-filter: blur(10px);
+    text-align: center;
 }
 
 .fieldtrip-item:hover{
@@ -2726,12 +2758,12 @@ html {
 
 .fieldtrip-item span{
     display: block;
-    font-size: 42px;
-    margin-bottom: 15px;
+    font-size: 40px;
+    margin-bottom: 14px;
 }
 
 .fieldtrip-item strong{
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 700;
 }
 
@@ -2742,31 +2774,52 @@ html {
 }
 
 .fieldtrip-circle.top{
-    width: 280px;
-    height: 280px;
-    top: -100px;
-    right: -70px;
+    width: 320px;
+    height: 320px;
+    top: -120px;
+    right: -90px;
 }
 
 .fieldtrip-circle.bottom{
-    width: 220px;
-    height: 220px;
-    bottom: -120px;
-    left: -80px;
+    width: 250px;
+    height: 250px;
+    bottom: -140px;
+    left: -100px;
+}
+
+@media(max-width:1100px){
+
+    .fieldtrip-wrapper{
+        grid-template-columns: 1fr;
+    }
+
+    .fieldtrip-image{
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .fieldtrip-content{
+        text-align: center;
+    }
+
+    .fieldtrip-section p{
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media(max-width:768px){
 
     .fieldtrip-section{
-        padding: 60px 25px;
+        padding: 55px 25px;
     }
 
     .fieldtrip-section h2{
-        font-size: 40px;
+        font-size: 42px;
     }
 
     .fieldtrip-section h3{
-        font-size: 25px;
+        font-size: 24px;
     }
 
     .fieldtrip-section p{
@@ -2774,9 +2827,14 @@ html {
     }
 
     .fieldtrip-item strong{
-        font-size: 20px;
+        font-size: 19px;
+    }
+
+    .fieldtrip-wrapper{
+        gap: 40px;
     }
 }
+
 </style>
 
 </div>
