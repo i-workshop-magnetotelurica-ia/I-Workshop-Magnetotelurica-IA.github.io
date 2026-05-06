@@ -2827,6 +2827,32 @@ Los datos publicados en este repositorio son de libre acceso para fines académi
 </div>
 </div>
 </div>
+<script>
+window.onload = function () {
 
+    const openBtn = document.querySelector('[data-evenz-switch="evenz-overlayopen"]');
+    const overlay = document.getElementById('evenz-overlay');
+    const closeBtn = document.querySelector('.evenz-overlay__closebar');
+
+    if(openBtn && overlay){
+
+        overlay.style.display = "none";
+
+        openBtn.onclick = function () {
+            overlay.style.display = "block";
+        };
+
+    }
+
+    if(closeBtn && overlay){
+
+        closeBtn.onclick = function () {
+            overlay.style.display = "none";
+        };
+
+    }
+
+};
+</script>
 </body>
 </html>
