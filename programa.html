@@ -2603,6 +2603,8 @@ html {
 
     </div>
   </div>
+
+
 </section>
 <section class="fieldtrip-section" id="salida-campo">
 
@@ -2617,6 +2619,64 @@ html {
             <img src="Semana_geofisica_VI_files/salida_campo.png" alt="Salida de campo magnetotelúrica">
 
         </div>
+<section class="talks-container">
+
+    <div class="talks-info">
+        <span class="talks-pill">CICLO DE CHARLAS</span>
+
+        <h2>
+            Charlas técnicas de <br>
+            <span>Geofísica Aplicada</span>
+        </h2>
+
+        <p>
+            Conferencias académicas enfocadas en magnetotelúrica,
+            inteligencia artificial y aplicaciones geofísicas modernas.
+            Explora nuevas tecnologías, casos reales y experiencias
+            profesionales junto a especialistas invitados.
+        </p>
+
+        <div class="talks-details">
+
+            <div class="detail-box">
+                <span>📅</span>
+                <strong>Semana de la Geofísica</strong>
+            </div>
+
+            <div class="detail-box">
+                <span>🎓</span>
+                <strong>Charlas académicas</strong>
+            </div>
+
+            <div class="detail-box">
+                <span>📍</span>
+                <strong>UIS - Bucaramanga</strong>
+            </div>
+
+            <div class="detail-box">
+                <span>⚡</span>
+                <strong>Entrada libre</strong>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Espacio para flyers -->
+    <div class="talks-flyers">
+
+        <div class="flyer-card">
+            <img src="flyer1.jpg" alt="Flyer charla 1">
+        </div>
+
+        <div class="flyer-card">
+            <img src="flyer2.jpg" alt="Flyer charla 2">
+        </div>
+
+    </div>
+
+</section>
+
 
         <!-- TEXTO -->
         <div class="fieldtrip-content">
@@ -2912,6 +2972,113 @@ html {
     </div>
 
 </section>
+.talks-container{
+    width:100%;
+    display:grid;
+    grid-template-columns:1.1fr 1fr;
+    gap:40px;
+    align-items:center;
+    padding:50px;
+    background:#0f172a;
+    border-radius:28px;
+    overflow:hidden;
+}
+
+.talks-info{
+    color:white;
+}
+
+.talks-pill{
+    display:inline-block;
+    background:#2563eb;
+    padding:8px 18px;
+    border-radius:50px;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:1px;
+    margin-bottom:20px;
+}
+
+.talks-info h2{
+    font-size:3rem;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.talks-info h2 span{
+    color:#60a5fa;
+}
+
+.talks-info p{
+    color:#cbd5e1;
+    line-height:1.8;
+    margin-bottom:30px;
+    max-width:580px;
+}
+
+.talks-details{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+
+.detail-box{
+    background:rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.08);
+    padding:18px;
+    border-radius:18px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    color:white;
+}
+
+.detail-box span{
+    font-size:1.4rem;
+}
+
+.talks-flyers{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    align-items:center;
+}
+
+.flyer-card{
+    width:230px;
+    height:360px;
+    border-radius:24px;
+    overflow:hidden;
+    background:#1e293b;
+    border:1px solid rgba(255,255,255,0.08);
+    transition:0.3s ease;
+    box-shadow:0 15px 35px rgba(0,0,0,0.25);
+}
+
+.flyer-card:hover{
+    transform:translateY(-8px) scale(1.02);
+}
+
+.flyer-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+/* Responsive */
+@media(max-width:950px){
+
+    .talks-container{
+        grid-template-columns:1fr;
+        padding:35px;
+    }
+
+    .talks-flyers{
+        flex-wrap:wrap;
+    }
+
+}
 
 <style>
 
